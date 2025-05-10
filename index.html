@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1 class="title">📸 <span class="title-text">Photo Explorer</span> 🌎</h1>
+        
+        <div class="controls">
+            <div class="theme-switcher">
+                <button class="theme-btn light active" data-theme="light"><i class="fas fa-sun"></i></button>
+                <button class="theme-btn dark" data-theme="dark"><i class="fas fa-moon"></i></button>
+                <button class="theme-btn neon" data-theme="neon"><i class="fas fa-lightbulb"></i></button>
+            </div>
+            
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="city">City</button>
+                <button class="filter-btn" data-filter="favorites">Favorites ♥</button>
+            </div>
+        </div>
+        
+        <div class="gallery-grid"></div>
+    </div>
+
+    <div class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-image" src="" alt="Enlarged view">
+        <div class="modal-info"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
